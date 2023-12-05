@@ -17,7 +17,7 @@ const NavBar = () => {
       <MenubarMenu>
         <div className="flex items-center justify-between w-full">
         <div>
-        StaySync
+        <h1 className="font-bold">StaySync</h1>
         </div>
         <div>
           <SearchBar />
