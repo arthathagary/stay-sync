@@ -33,7 +33,7 @@ const SearchBar = () => {
           px-6
         "
       >
-        locationLsabel
+        locationLabel
       </div>
       <div 
         className="
