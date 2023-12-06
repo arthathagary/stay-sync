@@ -13,7 +13,7 @@ import SearchBar from "./SearchBar";
 
 const NavBar = () => {
   return (
-    <Menubar className="h-20 px-20">
+    <Menubar className="h-20 px-20 md:flex hidden">
       <MenubarMenu>
         <div className="flex items-center justify-between w-full">
         <div>
