@@ -9,6 +9,7 @@ export default function Home() {
         <div>
           {/* <Button>Click me</Button>
           <ModeToggle /> */}
+          <NavBar />
           <HomePage />
         </div>
       

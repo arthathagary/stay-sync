@@ -5,7 +5,7 @@ import React from 'react'
 import { FaStar } from "react-icons/fa";
 
 interface Props { 
-    image :  StaticImageData;
+    image? :  StaticImageData;
     alt : string;
     place: string;
     date : string;
@@ -15,7 +15,7 @@ const RoomCard = ({image,alt,place,date,price}:Props) => {
   return (
     <Card className='md:w-72 md:h-72 w-52 rounded-2xl'>
         <div>
-        <Image src={image} alt={alt} style={{ borderRadius: '16px' }} />
+        {/* <Image src={image} alt={alt} style={{ borderRadius: '16px' }} /> */}
         </div>
         <div>
             <div className='flex items-center justify-between'>

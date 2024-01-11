@@ -6,6 +6,23 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model RoomDetail {
+  id         Int       @id @default(autoincrement())
+  name       String
+  type       String
+  capacity   Int
+  price      Int
+  status     Status    @default(AVAILABLE)
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+}
+
+enum Status {
+  AVAILABLE
+  NOT_AVAILABLE
 }
